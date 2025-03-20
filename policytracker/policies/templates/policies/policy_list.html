@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Policy Tracker</h1>
+    <ul>
+    {% for policy in policies %}
+        <li>{{ policy.policy_id }} - {{ policy.client_name }} - {{ policy.assigned_status }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
