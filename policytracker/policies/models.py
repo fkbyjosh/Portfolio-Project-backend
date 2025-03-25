@@ -9,4 +9,4 @@ class Policy(models.Model):
     payment_mode = models.CharField(max_length=50)
     status = models.CharField(max_length=50)
     branch = models.CharField(max_length=50)
-    premium = models.DecimalField(max_digits=10, decimal_places-2)
+    premium = models.DecimalField(max_digits=10, decimal_places=2)
