@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Policy(models.Model):
-    policy_num = models.IntegerField(primary_key=True)
+    policy_num = models.CharField(primary_key=True, max_length=50)
     policy_holder = models.CharField(max_length=100)
     policy_type = models.CharField(max_length=50)
     payment_mode = models.CharField(max_length=50)
